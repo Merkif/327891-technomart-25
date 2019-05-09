@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Nurmagomed Nurmagomedov](https://up.htmlacademy.ru/htmlcss/25/user/327891).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
