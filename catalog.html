@@ -58,7 +58,7 @@
       <div class="headline">
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-list__item is-home-page"><a href="/">Главная</a></li>
+            <li class="breadcrumbs-list__item is-home-page"><a href="/" aria-label="Главная"></a></li>
             <li class="breadcrumbs-list__item"><a href="catalog.html">Каталог</a></li>
             <li class="breadcrumbs-list__item"><a href="#">Инструменты</a></li>
             <li class="breadcrumbs-list__item breadcrumbs--active"><a href="#">Перфораторы</a></li>
@@ -68,7 +68,7 @@
       </div>
       <div class="main-content__layout">
         <div class="search-filters">
-          <form action="#" class="filters-form">
+          <form action="https://echo.htmlacademy.ru/" class="filters-form" method="get">
             <div class="filter-list">
               <div class="filter-item">
                 <fieldset class="filter-fieldset">
@@ -353,6 +353,18 @@
     </div>
   </footer>
   <!-- /footer -->
+  <!-- modals -->
+  <div class="modals">
+    <section class="modal modal-cart">
+      <button class="modal-close" type="button" aria-label="Закрыть модальное окно">x</button>
+      <h2 class="modal-cart__title">Товар добавлен в корзину</h2>
+      <div class="modal-btn__wrapper">
+        <a class="btn checkout-btn" href="order.html">Оформить заказ</a>
+        <button class="btn purchases-btn" type="button">Продолжить покупки</button>
+      </div>
+    </section>
+  </div>
+  <!-- /modals -->
   <script src="js/script.js"></script>
 </body>
 </html>
