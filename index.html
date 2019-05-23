@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="top-menu">
       <div class="top-menu__container container">
-        <a class="top-menu__logo">
+        <a class="logo top-menu__logo">
           <img src="img/technomart-logo.svg" alt="Техномарт" width="109" height="19">
         </a>
         <form action="#" class="top-menu__form">
@@ -17,18 +21,20 @@
         </form>
         <a href="#" class="bookmark__link" title="Закладки">Закладки:<span>0</span></a>
         <a href="#" class="cart__link" title="Корзина">Корзина:<span>0</span></a>
-        <a class="btn btn--order" href="#" title="Оформить заказ">Оформить заказ</a>
+        <a class="btn-order" href="#" title="Оформить заказ">Оформить заказ</a>
       </div>
     </div>
-    <div class="header-center container">
-      <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="header-contact">
-        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <small>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
-      </div>
-      <div class="header-btn">
-        <a class="btn login__btn" href="login.html" title="Войти">Войти</a>
-        <a class="btn signup__btn" href="registration.html" title="Регистрация">Регистрация</a>
+    <div class="header-center">
+      <div class="header-center__container container">
+        <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="header-contact">
+          <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <small>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
+        </div>
+        <div class="header-btn">
+          <a class="login__btn" href="login.html" title="Войти">Войти</a>
+          <a class="signup__btn" href="registration.html" title="Регистрация">Регистрация</a>
+        </div>
       </div>
     </div>
     <nav class="main-navigation">
@@ -77,21 +83,21 @@
   <footer class="main-footer">
     <div class="footer-top container">
       <div class="footer-info">
-        <a class="footer-logo">
+        <a class="logo footer-logo">
           <img src="img/technomart-logo.svg" alt="Техномарт" width="138" height="23">
         </a>
         <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
       </div>
       <ul class="footer-navigation">
-        <li class="footer-navigation__item navigation-list__item"><a href="#">Компания</a></li>
-        <li class="footer-navigation__item navigation-list__item"><a href="#">Новости</a></li>
-        <li class="footer-navigation__item navigation-list__item"><a href="catalog.html">Каталог</a></li>
-        <li class="footer-navigation__item navigation-list__item"><a href="#">Доставка</a></li>
-        <li class="footer-navigation__item navigation-list__item"><a href="#">Контакты</a></li>
-        <li class="footer-navigation__item navigation-list__item"><a href="#">Материалы</a></li>
-        <li class="footer-navigation__item navigation-list__item"><a href="#">Техника</a></li>
-        <li class="footer-navigation__item navigation-list__item"><a href="#">Инструменты</a></li>
-        <li class="footer-navigation__item navigation-list__item"><a href="#">Спецпредложения</a></li>
+        <li class="footer-navigation__item"><a href="#">Компания</a></li>
+        <li class="footer-navigation__item"><a href="#">Новости</a></li>
+        <li class="footer-navigation__item"><a href="catalog.html">Каталог</a></li>
+        <li class="footer-navigation__item"><a href="#">Доставка</a></li>
+        <li class="footer-navigation__item"><a href="#">Контакты</a></li>
+        <li class="footer-navigation__item"><a href="#">Материалы</a></li>
+        <li class="footer-navigation__item"><a href="#">Техника</a></li>
+        <li class="footer-navigation__item"><a href="#">Инструменты</a></li>
+        <li class="footer-navigation__item"><a href="#">Спецпредложения</a></li>
       </ul>
       <!-- /.container -->
     </div>
@@ -101,9 +107,21 @@
           <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
         </div>
         <ul class="footer-social__list">
-          <li class="social-list__item social-list--vk"><a href="#" title="Вконтакте">Вконтакте</a></li>
-          <li class="social-list__item social-list--fb"><a href="#" title="Facebook">Facebook</a></li>
-          <li class="social-list__item social-list--inst"><a href="#" title="instagram">instagram</a></li>
+          <li class="social-list__item social-list--vk">
+            <a href="#" title="Вконтакте">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item social-list--fb">
+            <a href="#" title="Facebook">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item social-list--inst">
+            <a href="#" title="instagram">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
         </ul>
         <div class="footer-contact">
           <p>Обратная связь:</p>
