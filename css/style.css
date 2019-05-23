@@ -95,6 +95,8 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 .bookmark__link:hover,
+.bookmark__link:focus,
+.cart__link:hover,
 .cart__link:focus {
   background-color: #212a3a;
 }
