@@ -142,11 +142,11 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 /* header center */
-.header-center {
+.header-menu {
   background-color: #f1f5f7;
 }
 
-.header-title {
+.header-menu__title {
   color: #ee3643;
   font-size: 16px;
   font-style: italic;
@@ -154,32 +154,32 @@ input[type="search"]:-ms-input-placeholder {
   font-weight: 400;
 }
 
-.header-phone {
+.header-menu__phone {
   border: 3px solid #ffffff;
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
 }
 
-.header-contact small {
+.header-menu__contact small {
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
 }
 
-.header-btn a {
+.header-menu__btn a {
   color: #000000;
   background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
 }
 
-.header-btn a:focus,
-.header-btn a:hover {
+.header-menu__btn a:focus,
+.header-menu__btn a:hover {
   color: #ee3643;
 }
 
-.header-btn a:active {
+.header-menu__btn a:active {
   color: #cacaca;
 }
 
@@ -210,7 +210,7 @@ input[type="search"]:-ms-input-placeholder {
 }
 
 /* navigation */
-.main-navigation {
+.header-menu__navigation {
   -webkit-box-shadow: inset 0 -5px 0 #293449;
   box-shadow: inset 0 -5px 0 #293449;
   background-color: #32425c;
