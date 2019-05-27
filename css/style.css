@@ -54,10 +54,28 @@ a {
   background-color: #293449;
 }
 
+.top-menu__logo-wrapper {
+  position: relative;
+  min-height: 42px;
+  width: 220px;
+}
+
+.top-menu__logo {
+  width: 220px;
+  min-height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
 .top-menu__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -90,10 +108,16 @@ a.logo:focus {
   background-color: #ca2c37;
 }
 
+.top-menu__form {
+  margin-right: 17px;
+}
+
 .top-menu__form [type="search"] {
   background-color: transparent;
   font: inherit;
   border: none;
+  width: 270px;
+  padding: 12px 17px;
 }
 
 input[type="search"]::-webkit-input-placeholder {
@@ -120,11 +144,25 @@ input[type="search"]:-ms-input-placeholder {
   color: #ffffff;
 }
 
+.bookmark__link {
+  padding: 12px 22px 12px;
+}
+
+.cart__link {
+  padding: 12px 22px 12px;
+}
+
 .bookmark__link:hover,
 .bookmark__link:focus,
 .cart__link:hover,
 .cart__link:focus {
   background-color: #212a3a;
+}
+
+.bookmark__link,
+.cart__link,
+.btn-order {
+  white-space: nowrap;
 }
 
 .bookmark__link:active,
@@ -148,6 +186,7 @@ input[type="search"]:-ms-input-placeholder {
 
 .btn-order {
   background-color: #63a63e;
+  padding: 12px 22px 12px;
 }
 
 .btn-order:focus,
@@ -163,6 +202,7 @@ input[type="search"]:-ms-input-placeholder {
 /* header center */
 .header-menu {
   background-color: #f1f5f7;
+  padding-top: 47px;
 }
 
 .header-menu__container {
@@ -183,6 +223,8 @@ input[type="search"]:-ms-input-placeholder {
   line-height: 23px;
   font-weight: 400;
   max-width: 194px;
+  margin: 0;
+  margin-left: 53px;
 }
 
 .header-menu__phone {
@@ -396,11 +438,13 @@ input[type="search"]:-ms-input-placeholder {
   display: flex;
 }
 
-.product-card:hover .product-card__thumb {
+.product-card:hover .product-card__thumb,
+.product-card:focus-within .product-card__thumb {
   display: none;
 }
 
-.product-card:hover .product-card__btns {
+.product-card:hover .product-card__btns,
+.product-card:focus-within .product-card__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
