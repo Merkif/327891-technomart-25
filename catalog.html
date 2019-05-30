@@ -61,7 +61,8 @@
         <div class="headline">
           <div class="breadcrumbs">
             <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-list__item is-home--page"><a href="/" title="Главная"><span class="visually-hidden">Главная</span></a></li>
+              <li class="breadcrumbs-list__item is-home--page"><a href="/" title="Главная"><span
+                    class="visually-hidden">Главная</span></a></li>
               <li class="breadcrumbs-list__item"><a href="catalog.html">Каталог</a></li>
               <li class="breadcrumbs-list__item"><a href="#">Инструменты</a></li>
               <li class="breadcrumbs-list__item breadcrumbs--active"><a href="#">Перфораторы</a></li>
@@ -71,6 +72,7 @@
         </div>
         <div class="main-content__layout">
           <div class="search-filters">
+            <h4 class="filter-heading">Фильтр:</h4>
             <form action="https://echo.htmlacademy.ru/" class="filters-form" method="get">
               <div class="filter-list">
                 <div class="filter-item">
@@ -178,7 +180,8 @@
                   </article>
                 </li>
                 <li class="product-card__item">
-                  <article class="product-card is-new--product" tabindex="0">
+                  <article class="product-card" tabindex="0">
+                    <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
                     <div class="product-card__top">
                       <div class="product-card__thumb">
                         <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
@@ -214,7 +217,8 @@
                   </article>
                 </li>
                 <li class="product-card__item">
-                  <article class="product-card is-new--product" tabindex="0">
+                  <article class="product-card" tabindex="0">
+                    <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
                     <div class="product-card__top">
                       <div class="product-card__thumb">
                         <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
@@ -249,7 +253,8 @@
                   </article>
                 </li>
                 <li class="product-card__item">
-                  <article class="product-card is-new--product" tabindex="0">
+                  <article class="product-card" tabindex="0">
+                    <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
                     <div class="product-card__top">
                       <div class="product-card__thumb">
                         <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
@@ -377,7 +382,9 @@
   <div class="modals">
     <section class="modal modal-cart">
       <button class="modal-close" type="button" aria-label="Закрыть модальное окно">x</button>
-      <h2 class="modal-cart__title">Товар добавлен в корзину</h2>
+      <div class="modal-content__wrapper">
+        <h2 class="modal-cart__title">Товар добавлен в корзину</h2>
+      </div>
       <div class="modal-btn__wrapper">
         <a class="btn checkout-btn" href="order.html">Оформить заказ</a>
         <button class="btn purchases-btn" type="button">Продолжить покупки</button>
