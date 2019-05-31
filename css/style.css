@@ -1364,7 +1364,8 @@ section.contact {
   z-index: 9999;
   padding-top: 49px;
   max-width: 620px;
-  width: 620px;
+  width: 100%;
+  display: none;
 
 }
 
