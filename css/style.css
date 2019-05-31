@@ -1365,7 +1365,7 @@ section.contact {
   padding-top: 49px;
   max-width: 620px;
   width: 620px;
-  display: none;
+
 }
 
 .modal-write-us {
@@ -1445,28 +1445,28 @@ section.contact {
   min-height: 114px;
 }
 
-.top-menu__form input::-webkit-input-placeholder {
+.form-field::-webkit-input-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-.top-menu__form input::-moz-placeholder {
+.form-field::-moz-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-.top-menu__form input:-moz-placeholder {
+.form-field:-moz-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
 
-.top-menu__form input:-ms-input-placeholder {
+.form-field:-ms-input-placeholder {
   color: #a9a9a9;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
