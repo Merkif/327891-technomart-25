@@ -18,12 +18,16 @@
             <img src="img/technomart-logo.svg" alt="Техномарт" width="109" height="19">
           </a>
         </div>
-        <form action="#" class="top-menu__form" aria-label="Поиск">
+        <form action="#" class="top-menu__form">
           <label for="search" class="visually-hidden">Поиск</label>
           <input type="search" id="search" placeholder="Поиск:">
         </form>
-        <a href="/catalog.html" class="bookmark__link" title="Закладки">Закладки:<span> 0</span></a>
-        <a href="/catalog.html" class="cart__link cart--active" title="Корзина">Корзина:<span> 10</span></a>
+        <a href="/catalog.html" class="bookmark__link" title="Закладки">Закладки:
+          <span class="visually-hidden"> Количество закладок:</span><span> 0</span>
+        </a>
+        <a href="/catalog.html" class="cart__link cart--active" title="Корзина">Корзина:
+          <span class="visually-hidden"> Количество товаров в корзине:</span><span> 10</span>
+        </a>
         <a href="/catalog.html" class="btn-order" title="Оформить заказ">Оформить заказ</a>
       </div>
     </div>
@@ -31,7 +35,9 @@
       <div class="header-menu__container container">
         <h1 class="header-menu__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <div class="header-menu__contact">
-          <a class="header-menu__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <a class="header-menu__phone" href="tel:+78125550555">
+            <span class="visually-hidden">Номер телефона компании ТЕХНОМАРТ:</span>
+            +7 (812) 555-05-55</a>
           <small>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
         </div>
         <div class="user-profile">
@@ -41,7 +47,7 @@
             <a class="user-cabinet__link" href="#" title="Личный кабинет">Личный кабинет</a>
           </div>
         </div>
-        <nav class="header-menu__navigation" aria-label="Глобальная навигация">
+        <nav class="header-menu__navigation" aria-label="Главное меню сайта">
           <ul class="navigation-list">
             <li class="navigation-list__item"><a href="/">Главная</a></li>
             <li class="navigation-list__item"><a href="#">Компания</a></li>
@@ -61,9 +67,9 @@
       <div class="main-content__container container">
         <div class="headline">
           <div class="breadcrumbs">
-            <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-list__item is-home--page"><a href="/" title="Главная"><span
-                    class="visually-hidden">Главная</span></a></li>
+            <ul class="breadcrumbs-list" role="navigation" aria-label="Навигационная цепочка">
+              <li class="breadcrumbs-list__item is-home--page"><a href="/" title="Главная">
+                  <span class="visually-hidden">Главная</span></a></li>
               <li class="breadcrumbs-list__item"><a href="catalog.html">Каталог</a></li>
               <li class="breadcrumbs-list__item"><a href="#">Инструменты</a></li>
               <li class="breadcrumbs-list__item breadcrumbs--active"><a href="#">Перфораторы</a></li>
@@ -184,8 +190,13 @@
                     </div>
                     <div class="product-card__body">
                       <h3 class="product-card__title">Перфоратор BOSCH BFG 3000</h3>
-                      <p class="price price--sale">22500 Р.</p>
-                      <p class="price price--current"><span>15500 Р.</span></p>
+                      <p class="price price--sale">
+                        <span class="visually-hidden">Цена со скидкой</span>
+                        <span>22500 Р.</span>
+                      </p>
+                      <p class="price price--current">
+                        <span class="visually-hidden">Актуальная цена</span>
+                        <span>15500 Р.</span></p>
                     </div>
                   </article>
                 </li>
@@ -202,8 +213,13 @@
                     </div>
                     <div class="product-card__body">
                       <h3 class="product-card__title">Перфоратор BOSCH BFG 6000</h3>
-                      <p class="price price--sale">30500 Р.</p>
-                      <p class="price price--current"><span>25500 Р.</span></p>
+                      <p class="price price--sale">
+                        <span class="visually-hidden">Цена со скидкой</span>
+                        <span>30500 Р.</span>
+                      </p>
+                      <p class="price price--current">
+                        <span class="visually-hidden">Актуальная цена</span>
+                        <span>25500 Р.</span></p>
                     </div>
                   </article>
                 </li>
@@ -221,8 +237,13 @@
                     </div>
                     <div class="product-card__body">
                       <h3 class="product-card__title">Перфоратор BOSCH BFG 2000</h3>
-                      <p class="price price--sale">22500 Р.</p>
-                      <p class="price price--current"><span>12500 Р.</span></p>
+                      <p class="price price--sale">
+                        <span class="visually-hidden">Цена со скидкой</span>
+                        <span>22500 Р.</span>
+                      </p>
+                      <p class="price price--current">
+                        <span class="visually-hidden">Актуальная цена</span>
+                        <span>12500 Р.</span></p>
                     </div>
                   </article>
                 </li>
@@ -239,8 +260,13 @@
                     </div>
                     <div class="product-card__body">
                       <h3 class="product-card__title">Перфоратор BOSCH BFG 3000</h3>
-                      <p class="price price--sale">22500 Р.</p>
-                      <p class="price price--current"><span>15500 Р.</span></p>
+                      <p class="price price--sale">
+                        <span class="visually-hidden">Цена со скидкой</span>
+                        <span>22500 Р.</span>
+                      </p>
+                      <p class="price price--current">
+                        <span class="visually-hidden">Актуальная цена</span>
+                        <span>15500 Р.</span></p>
                     </div>
                   </article>
                 </li>
@@ -258,8 +284,13 @@
                     </div>
                     <div class="product-card__body">
                       <h3 class="product-card__title">Перфоратор BOSCH BFG 6000</h3>
-                      <p class="price price--sale">30500 Р.</p>
-                      <p class="price price--current"><span>25500 Р.</span></p>
+                      <p class="price price--sale">
+                        <span class="visually-hidden">Цена со скидкой</span>
+                        <span>30500 Р.</span>
+                      </p>
+                      <p class="price price--current">
+                        <span class="visually-hidden">Актуальная цена</span>
+                        <span>25500 Р.</span></p>
                     </div>
                   </article>
                 </li>
@@ -294,8 +325,13 @@
                     </div>
                     <div class="product-card__body">
                       <h3 class="product-card__title">Перфоратор BOSCH BFG 3000</h3>
-                      <p class="price price--sale">22500 Р.</p>
-                      <p class="price price--current"><span>15500 Р.</span></p>
+                      <p class="price price--sale">
+                        <span class="visually-hidden">Цена со скидкой</span>
+                        <span>22500 Р.</span>
+                      </p>
+                      <p class="price price--current">
+                        <span class="visually-hidden">Актуальная цена</span>
+                        <span>15500 Р.</span></p>
                     </div>
                   </article>
                 </li>
@@ -312,8 +348,13 @@
                     </div>
                     <div class="product-card__body">
                       <h3 class="product-card__title">Перфоратор BOSCH BFG 6000</h3>
-                      <p class="price price--sale">30500 Р.</p>
-                      <p class="price price--current"><span>25500 Р.</span></p>
+                      <p class="price price--sale">
+                        <span class="visually-hidden">Цена со скидкой</span>
+                        <span>30500 Р.</span>
+                      </p>
+                      <p class="price price--current">
+                        <span class="visually-hidden">Актуальная цена</span>
+                        <span>25500 Р.</span></p>
                     </div>
                   </article>
                 </li>
@@ -354,7 +395,7 @@
         </a>
         <p> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
       </div>
-      <div class="footer-navigation__wrapper">
+      <div class="footer-navigation__wrapper" role="navigation" aria-label="Дополнительная меню">
         <ul class="footer-navigation">
           <li class="footer-navigation__item"><a href="#">Компания</a></li>
           <li class="footer-navigation__item"><a href="#">Новости</a></li>
