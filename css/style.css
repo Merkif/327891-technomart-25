@@ -1469,6 +1469,7 @@ section.contact {
 
 .form-field__message {
   min-height: 114px;
+  resize: none;
 }
 
 .form-field::-webkit-input-placeholder {
