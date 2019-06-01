@@ -991,6 +991,7 @@ a.logo:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .buy__btn {
@@ -1054,7 +1055,6 @@ a.logo:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: auto;
 }
 
 .price--current span {

@@ -18,8 +18,9 @@
             <img src="img/technomart-logo.svg" alt="Техномарт" width="109" height="19">
           </a>
         </div>
-        <form action="#" class="top-menu__form">
-          <input type="search" placeholder="Поиск:">
+        <form action="#" class="top-menu__form" aria-label="Поиск">
+          <label for="search" class="visually-hidden">Поиск</label>
+          <input type="search" id="search" placeholder="Поиск:">
         </form>
         <a href="/catalog.html" class="bookmark__link" title="Закладки">Закладки:<span> 0</span></a>
         <a href="/catalog.html" class="cart__link cart--active" title="Корзина">Корзина:<span> 10</span></a>
