@@ -168,10 +168,16 @@ a.logo:focus {
 .header-top__menu a {
   color: #ffffff;
 }
-
 .header-top__menu a:focus:not(.logo) {
   outline-offset: -4px;
-}
+} 
+/* .header-top__menu a:focus:not(.logo),
+.header-menu__navigation a:focus {
+  outline-offset: -4px;
+  outline-style: dashed;
+  outline-color: #fff;
+  outline-width: 2px;
+} */
 
 .bookmark__link {
   padding: 11px 27px 13px 44px;
