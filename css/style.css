@@ -886,7 +886,7 @@ a.logo:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 220px;
+  width: 220px;
   border: 1px solid #e5e5e5;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 17px;
@@ -989,6 +989,7 @@ a.logo:focus {
 }
 
 .product-card__body {
+  width: inherit;
   padding: 0 32px 21px 32px;
   text-align: center;
   display: -webkit-box;
@@ -1043,6 +1044,7 @@ a.logo:focus {
 }
 
 .product-card__title {
+  width: inherit;
   margin: 0;
   margin-bottom: 16px;
   font-size: 18px;
