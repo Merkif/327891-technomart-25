@@ -439,6 +439,7 @@ a.logo:focus {
 
 .user-profile__btn a {
   color: #32425c;
+  text-decoration: underline;
 }
 
 .user-profile__btn a:hover,
@@ -866,6 +867,9 @@ a.logo:focus {
 }
 
 /* product card */
+.product-grid {
+  max-width: 700px;
+}
 .product-card__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,6 +917,7 @@ a.logo:focus {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  max-width: 220px;
 }
 
 .product-card:hover {
@@ -1152,16 +1157,20 @@ section.contact {
 .delivery-list {
   margin-bottom: 38px;
 }
-
+.delivery-list__item{ 
+  padding-left: 36px;
+  position: relative;
+}
 .delivery-list__item:not(:last-child) {
   margin-bottom: 18px;
 }
 
 .delivery-list__item::before {
   content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 11px;
+  position: absolute;
+  top:50%;
+  left: 0;
+  transform: translateY(-50%);
   width: 25px;
   height: 2px;
   background-color: #ee3643;
