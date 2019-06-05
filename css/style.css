@@ -168,9 +168,11 @@ a.logo:focus {
 .header-top__menu a {
   color: #ffffff;
 }
+
 .header-top__menu a:focus:not(.logo) {
   outline-offset: -4px;
-} 
+}
+
 /* .header-top__menu a:focus:not(.logo),
 .header-menu__navigation a:focus {
   outline-offset: -4px;
@@ -742,6 +744,10 @@ a.logo:focus {
 .filter-list__label {
   padding-left: 35px;
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* custom radio button */
@@ -868,12 +874,13 @@ a.logo:focus {
 
 /* product card */
 .product-card__list {
-  max-width: 700px;
+  max-width: 720px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: -20px;
 }
 
 .product-card {
@@ -901,6 +908,7 @@ a.logo:focus {
   height: 59px;
   z-index: 1;
 }
+
 .flag-new {
   background-image: url(../img/new_flag.png);
 }
@@ -909,16 +917,17 @@ a.logo:focus {
   position: relative;
 }
 
-.product-card__item:not(:nth-child(3n)) {
-  margin-right: 20px;
-}
-
 .product-card__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0;
+  flex: 1 0;
   width: 220px;
+  min-width: 200px;
+  margin-left: 20px;
 }
 
 .product-card:hover {
@@ -934,11 +943,16 @@ a.logo:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
+
 .product-card__thumb img {
   width: 218px;
-  height: 170px;
+  min-height: 170px;
 }
+
 .product-card__btns {
   position: absolute;
   top: 0;
@@ -960,6 +974,10 @@ a.logo:focus {
   padding: 44px 42px 43px 42px;
   opacity: 0;
   visibility: hidden;
+}
+
+.product-card__btns * {
+  border-radius: 2px;
 }
 
 .product-card:hover .product-card__btns,
@@ -1007,6 +1025,8 @@ a.logo:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -1163,10 +1183,12 @@ section.contact {
 .delivery-list {
   margin-bottom: 38px;
 }
-.delivery-list__item{ 
+
+.delivery-list__item {
   padding-left: 36px;
   position: relative;
 }
+
 .delivery-list__item:not(:last-child) {
   margin-bottom: 18px;
 }
@@ -1174,8 +1196,9 @@ section.contact {
 .delivery-list__item::before {
   content: "";
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 0;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 25px;
   height: 2px;
