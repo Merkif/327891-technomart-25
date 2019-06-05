@@ -935,7 +935,10 @@ a.logo:focus {
   display: -ms-flexbox;
   display: flex;
 }
-
+.product-card__thumb img {
+  width: 218px;
+  height: 170px;
+}
 .product-card__btns {
   position: absolute;
   top: 0;
@@ -991,7 +994,7 @@ a.logo:focus {
 
 .product-card__body {
   width: inherit;
-  padding: 0 32px 21px 32px;
+  padding: 0 30px 21px 30px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
