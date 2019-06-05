@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Техномарт: Каталог</title>
@@ -10,7 +9,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <header class="page-header">
     <div class="header-top__menu">
@@ -21,7 +19,7 @@
           </a>
         </div>
         <form action="#" class="top-menu__form">
-          <label for="search" class="visually-hidden">Поиск</label>
+          <label for="search" class="visually-hidden-input">Поиск</label>
           <input type="search" id="search" placeholder="Поиск:">
         </form>
         <a href="/catalog.html" class="bookmark__link" title="Закладки">Закладки:
@@ -172,10 +170,27 @@
           </form>
         </div>
         <div class="product-grid">
-          <div class="product-grid__headline">
-            <div class="product-grid__filter">
-              <!-- Здесь будет верхний фильтр -->
-            </div>
+          <div class="product-sorting__filter">
+            <form action="#" method="GET">
+              <fieldset class="sorting">
+                <div class="sorting-wrapper">
+                  <h4 class="sorting-title">Сортировка:</h4>
+                  <div class="sorting-links">
+                    <a href="#" class="sorting-link--active">По цене</a>
+                    <a href="#">По типу</a>
+                    <a href="#">По функционалу</a>
+                  </div>
+                  <div class="sorting-controls">
+                    <a href="#" class="sorting-control sorting-control--up sorting-control--active">
+                      <span class="visually-hidden">Ввехр</span>
+                    </a>
+                    <a href="#" class="sorting-control sorting-control--down">
+                      <span class="visually-hidden">Вниз</span>
+                    </a>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
           </div>
           <ul class="product-card__list">
             <li class="product-card__item">
@@ -468,5 +483,4 @@
   <!-- /modals -->
   <script src="js/script.js"></script>
 </body>
-
 </html>
