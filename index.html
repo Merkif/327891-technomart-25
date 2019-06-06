@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="page-header">
     <div class="header-top__menu">
@@ -79,7 +81,7 @@
           <h2 class="section-title">контакты</h2>
           <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
           <a href="#" class="contact-map">
-            <img src="img/map.png" alt="наш офис на карте" width="300" height="158">
+            <img src="img/map.jpg" alt="наш офис на карте" width="300" height="158">
           </a>
           <a href="#" class="btn">Заблудились? напишите нам!</a>
         </section>
@@ -149,22 +151,23 @@
   <!-- /footer -->
   <!-- modals -->
   <div class="modals">
-    <section class="modal modal-map">
-      <button class="modal-close" type="button" aria-label="Закрыть модальное окно">x</button>
+    <section class="modal modal-map" role="dialog">
+      <button class="modal-close" type="button">Закрыть</button>
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <div class="map-wrapper">
-        <!-- здесь будет карта -->
+        <img src="img/mapfullsize.jpg" alt="наш офис на карте" width="940" height="447">
       </div>
     </section>
-    <section class="modal modal-write-us">
-      <button class="modal-close" type="button" aria-label="Закрыть модальное окно"></button>
+    <section class="modal modal-write-us" role="dialog">
+      <button class="modal-close" type="button">Закрыть</button>
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="form-inner">
           <div class="form-group">
             <label class="field-name">
               <span>Ваше имя:</span>
-              <input class="form-field form-field__name" type="text" name="name" placeholder="Имя фамилия" required>
+              <input class="form-field form-field__name" type="text" name="name" placeholder="Имя фамилия" required
+                autofocus>
             </label>
             <label class="field-email">
               <span>Ваш e-mail:</span>
@@ -186,4 +189,5 @@
   <!-- /modals -->
   <script src="js/script.js"></script>
 </body>
+
 </html>
