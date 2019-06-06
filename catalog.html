@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Техномарт: Каталог</title>
@@ -10,7 +9,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <header class="page-header">
     <div class="header-top__menu">
@@ -25,10 +23,10 @@
           <input type="search" id="search" placeholder="Поиск:">
         </form>
         <a href="/catalog.html" class="bookmark__link" title="Закладки">Закладки:
-          <span class="visually-hidden"> Количество закладок:</span><span> 0</span>
+          <span class="visually-hidden"> Количество закладок:</span>0
         </a>
         <a href="/catalog.html" class="cart__link cart--active" title="Корзина">Корзина:
-          <span class="visually-hidden"> Количество товаров в корзине:</span><span> 10</span>
+          <span class="visually-hidden"> Количество товаров в корзине:</span>10
         </a>
         <a href="/catalog.html" class="btn-order" title="Оформить заказ">Оформить заказ</a>
       </div>
@@ -43,7 +41,7 @@
           <small>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</small>
         </div>
         <div class="user-profile">
-          <a href="#" class="user-profile__link"><span>Равшан Джамшутович</span></a>
+          <a href="#" class="user-profile__link">Равшан Джамшутович</a>
           <div class="user-profile__btn">
             <a class="user-order__link" href="#" title="Мои заказы">Мои заказы</a>
             <a class="user-cabinet__link" href="#" title="Личный кабинет">Личный кабинет</a>
@@ -51,13 +49,27 @@
         </div>
         <nav class="header-menu__navigation" aria-label="Главное меню сайта">
           <ul class="navigation-list">
-            <li class="navigation-list__item"><a href="index.html">Главная</a></li>
-            <li class="navigation-list__item"><a href="#">Компания</a></li>
-            <li class="navigation-list__item is--active"><a href="catalog.html">Каталог</a></li>
-            <li class="navigation-list__item"><a href="#">Новости</a></li>
-            <li class="navigation-list__item"><a href="#">Спецпредложения</a></li>
-            <li class="navigation-list__item"><a href="#">Доставка</a></li>
-            <li class="navigation-list__item"><a href="#">Контакты</a></li>
+            <li class="navigation-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Компания</a>
+            </li>
+            <li class="navigation-list__item is--active">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Спецпредложения</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -72,9 +84,15 @@
             <li class="breadcrumbs-list__item is-home--page">
               <a href="index.html" title="Главная"><span class="visually-hidden">Главная</span></a>
             </li>
-            <li class="breadcrumbs-list__item"><a href="catalog.html">Каталог</a></li>
-            <li class="breadcrumbs-list__item"><a href="#">Инструменты</a></li>
-            <li class="breadcrumbs-list__item breadcrumbs--active"><a href="#">Перфораторы</a></li>
+            <li class="breadcrumbs-list__item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="breadcrumbs-list__item">
+              <a href="#">Инструменты</a>
+            </li>
+            <li class="breadcrumbs-list__item breadcrumbs--active">
+              <a href="#">Перфораторы</a>
+            </li>
           </ul>
         </div>
         <h1 class="section-heading page--heading">Перфораторы</h1>
@@ -173,26 +191,24 @@
         </div>
         <div class="product-grid">
           <div class="product-sorting__filter">
-            <form action="#" method="GET">
-              <fieldset class="sorting">
-                <div class="sorting-wrapper">
-                  <h4 class="sorting-title">Сортировка:</h4>
-                  <div class="sorting-links">
-                    <a href="#" class="sorting-link--active">По цене</a>
-                    <a href="#">По типу</a>
-                    <a href="#">По функционалу</a>
-                  </div>
-                  <div class="sorting-controls">
-                    <a href="#" class="sorting-control sorting-control--up sorting-control--active">
-                      <span class="visually-hidden">Ввехр</span>
-                    </a>
-                    <a href="#" class="sorting-control sorting-control--down">
-                      <span class="visually-hidden">Вниз</span>
-                    </a>
-                  </div>
+            <fieldset class="sorting">
+              <div class="sorting-wrapper">
+                <h4 class="sorting-title">Сортировка:</h4>
+                <div class="sorting-links">
+                  <a href="#" class="sorting-link--active">По цене</a>
+                  <a href="#">По типу</a>
+                  <a href="#">По функционалу</a>
                 </div>
-              </fieldset>
-            </form>
+                <div class="sorting-controls">
+                  <a href="#" class="sorting-control sorting-control--up sorting-control--active">
+                    <span class="visually-hidden">Ввехр</span>
+                  </a>
+                  <a href="#" class="sorting-control sorting-control--down">
+                    <span class="visually-hidden">Вниз</span>
+                  </a>
+                </div>
+              </div>
+            </fieldset>
           </div>
           <ul class="product-card__list">
             <li class="product-card__item">
@@ -402,10 +418,18 @@
           </ul>
           <nav class="pagination" aria-label="Постраничная навигация">
             <ul class="pagination-list">
-              <li><a class="pagination__active">1</a></li>
-              <li><a href="#1">2</a></li>
-              <li><a href="#2">3</a></li>
-              <li><a class="pagination__next" href="#next">Следующая</a></li>
+              <li>
+                <a class="pagination__active">1</a>
+              </li>
+              <li>
+                <a href="#1">2</a>
+              </li>
+              <li>
+                <a href="#2">3</a>
+              </li>
+              <li>
+                <a class="pagination__next" href="#next">Следующая</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -438,17 +462,35 @@
       </div>
       <div class="footer-navigation__wrapper" role="navigation" aria-label="Дополнительное меню">
         <ul class="footer-navigation">
-          <li class="footer-navigation__item"><a href="#">Компания</a></li>
-          <li class="footer-navigation__item"><a href="#">Новости</a></li>
-          <li class="footer-navigation__item"><a href="catalog.html">Каталог</a></li>
-          <li class="footer-navigation__item"><a href="#">Доставка</a></li>
-          <li class="footer-navigation__item"><a href="#">Контакты</a></li>
+          <li class="footer-navigation__item">
+            <a href="#">Компания</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#">Контакты</a>
+          </li>
         </ul>
         <ul class="footer-navigation footer-navigation--color">
-          <li class="footer-navigation__item"><a href="#">Материалы</a></li>
-          <li class="footer-navigation__item"><a href="#">Техника</a></li>
-          <li class="footer-navigation__item"><a href="#">Инструменты</a></li>
-          <li class="footer-navigation__item"><a href="#">Спецпредложения</a></li>
+          <li class="footer-navigation__item">
+            <a href="#">Материалы</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#">Техника</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#">Инструменты</a>
+          </li>
+          <li class="footer-navigation__item">
+            <a href="#">Спецпредложения</a>
+          </li>
         </ul>
       </div>
       <!-- /.container -->
@@ -504,5 +546,4 @@
   <!-- /modals -->
   <script src="js/script.js"></script>
 </body>
-
 </html>
