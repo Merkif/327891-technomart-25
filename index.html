@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="page-header">
     <div class="header-top__menu">
@@ -75,6 +77,67 @@
   </header>
   <!-- /header -->
   <main>
+    <section class="offer">
+      <div class="offer-container container">
+        <h2 class="visually-hidden">Что мы предлагаем?</h2>
+        <ul class="category-list category-list--left">
+          <li class="category-list__item category--materials">
+            <div class="flag flag-new">
+              <span class="visually-hidden">Новинка</span>
+            </div>
+            <h3 class="category-item__title">Материалы</h3>
+            <a href="#" class="category-item__link">На любой вкус</a>
+          </li>
+          <li class="category-list__item category--instruments">
+            <h3 class="category-item__title">Инструменты</h3>
+            <a href="#" class="category-item__link">На все случаи</a>
+          </li>
+          <li class="category-slider">
+            <button type="button" class="slider-arrows slider-arrow__prev">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <ul class="category-slider__list js-slider__init">
+              <li class="slider-list__item" style="background-image: url('../img/slider-img1.jpg');">
+                <h2 class="slider-item__title">Перфораторы</h2>
+                <p class="slider-item__subtitle">Настоящие мужские игрушки</p>
+                <a href="/catalog.html" class="btn slider-item__link">Открыть каталог</a>
+              </li>
+              <li class="slider-list__item" style="background-image: url('../img/slider-img2.jpg'); display: none;">
+                <h2 class="slider-item__title">Дрели</h2>
+                <p class="slider-item__subtitle">Соседям на радость</p>
+                <a href="/catalog.html" class="btn slider-item__link">Открыть каталог</a>
+              </li>
+            </ul>
+            <button type="button" class="slider-arrows slider-arrow__next">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+            <ul class="slider-dots__list">
+              <li class="active">
+                <span class="visually-hidden">1</span>
+              </li>
+              <li>
+                <span class="visually-hidden">2</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="category-list category-list--right">
+          <li class="category-list__item category--technique">
+            <h3 class="category-item__title">Техника</h3>
+            <a href="#" class="category-item__link">Для стройки</a>
+          </li>
+          <li class="category-list__item category--discount">
+            <h3 class="category-item__title">Скидка 50%</h3>
+            <a href="#" class="category-item__link">На 350 товаров</a>
+          </li>
+          <li class="category-list__item category--delivery">
+            <h3 class="category-item__title">Доставка</h3>
+            <a href="#" class="category-item__link">Бесплатно</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </section>
     <div class="information">
       <div class="information-container container">
         <section class="about-company">
@@ -85,7 +148,7 @@
           </p>
           <p>
             Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными
-            компаниями: 
+            компаниями:
           </p>
           <ul class="delivery-list">
             <li class="delivery-list__item">
@@ -230,4 +293,5 @@
   <!-- /modals -->
   <script src="js/script.js"></script>
 </body>
+
 </html>
