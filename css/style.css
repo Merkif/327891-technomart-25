@@ -525,21 +525,28 @@ a.logo:focus {
 }
 
 /* main */
-
 /* slider */
-
 .offer {
   padding: 59px 0 53px 0;
 }
 
 .offer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .category-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -599,13 +606,16 @@ a.logo:focus {
   border-radius: 2px;
   padding: 10px 24px;
 }
+
 .category-item__link:hover,
 .category-item__link:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .category-item__link:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 .category-slider {
   position: relative;
 }
@@ -614,8 +624,15 @@ a.logo:focus {
   min-width: 620px;
   min-height: 266px;
   padding: 22px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
@@ -633,23 +650,28 @@ a.logo:focus {
   font-weight: 400;
   line-height: 24px;
 }
+
 .slider-item__link {
   min-width: 195px;
   margin-top: auto;
 }
+
 .slider-arrows {
   background: transparent no-repeat;
   border: none;
   width: 22px;
   height: 40px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   padding: 0;
 }
+
 .slider-arrows:hover {
   opacity: 0.5;
 }
+
 .slider-arrow__prev {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='39' viewBox='0 0 22 39'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23fff' d='M19.922-.054l1.999 2.048L4.905 19.441l17.071 17.501-2 2.048L.91 19.441z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   left: 25px;
@@ -660,12 +682,14 @@ a.logo:focus {
   right: 25px;
 }
 
-
 .slider-dots__list {
   position: absolute;
   left: 50%;
   bottom: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -675,7 +699,6 @@ a.logo:focus {
   border-radius: 50%;
   margin: 0 5px;
   background-color: #ffffff;
-
 }
 
 .slider-dots__list .active {
