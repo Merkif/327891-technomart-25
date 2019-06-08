@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Техномарт: Каталог</title>
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="page-header">
     <div class="header-top__menu">
@@ -126,7 +128,7 @@
               </fieldset>
               <fieldset class="filter-item">
                 <legend class="filter-item__title">Производители:</legend>
-                <ul class="filter-list manufacturer-list">
+                <ul class="filter-list">
                   <li class="filter-list__item">
                     <label class="filter-list__label">
                       <input class="filter-list__input visually-hidden-input" type="checkbox" name="bosh" checked>
@@ -166,7 +168,7 @@
               </fieldset>
               <fieldset class="filter-item">
                 <legend class="filter-item__title">Питание:</legend>
-                <ul class="filter-list product-type__list">
+                <ul class="filter-list">
                   <li class="filter-list__item">
                     <label class="filter-list__label">
                       <input class="filter-list__input visually-hidden-input" type="radio" name="product-type"
@@ -191,29 +193,26 @@
         </div>
         <div class="product-grid">
           <div class="product-sorting__filter">
-            <fieldset class="sorting">
-              <div class="sorting-wrapper">
-                <h4 class="sorting-title">Сортировка:</h4>
-                <div class="sorting-links">
-                  <a href="#" class="sorting-link--active">По цене</a>
-                  <a href="#">По типу</a>
-                  <a href="#">По функционалу</a>
-                </div>
-                <div class="sorting-controls">
-                  <a href="#" class="sorting-control sorting-control--up sorting-control--active">
-                    <span class="visually-hidden">Ввехр</span>
-                  </a>
-                  <a href="#" class="sorting-control sorting-control--down">
-                    <span class="visually-hidden">Вниз</span>
-                  </a>
-                </div>
+            <div class="sorting">
+              <h4 class="sorting-title">Сортировка:</h4>
+              <div class="sorting-links">
+                <a href="#" class="sorting-link--active">По цене</a>
+                <a href="#">По типу</a>
+                <a href="#">По функционалу</a>
               </div>
-            </fieldset>
+              <div class="sorting-controls">
+                <a href="#" class="sorting-control sorting-control--up sorting-control--active">
+                  <span class="visually-hidden">Ввехр</span>
+                </a>
+                <a href="#" class="sorting-control sorting-control--down">
+                  <span class="visually-hidden">Вниз</span>
+                </a>
+              </div>
+            </div>
           </div>
           <ul class="product-card__list">
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag"><span class="visually-hidden"></span></div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
@@ -237,7 +236,6 @@
             </li>
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag"><span class="visually-hidden"></span></div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
@@ -261,7 +259,9 @@
             </li>
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
+                <div class="flag flag-new">
+                  <span class="visually-hidden">Новинка</span>
+                </div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
@@ -285,7 +285,6 @@
             </li>
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag"><span class="visually-hidden"></span></div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
@@ -309,7 +308,9 @@
             </li>
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
+                <div class="flag flag-new">
+                  <span class="visually-hidden">Новинка</span>
+                </div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
@@ -333,7 +334,6 @@
             </li>
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag"><span class="visually-hidden"></span></div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
@@ -351,7 +351,9 @@
             </li>
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag flag-new"><span class="visually-hidden">Новинка</span></div>
+                <div class="flag flag-new">
+                  <span class="visually-hidden">Новинка</span>
+                </div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
@@ -375,7 +377,6 @@
             </li>
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag"><span class="visually-hidden"></span></div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
@@ -399,7 +400,6 @@
             </li>
             <li class="product-card__item">
               <article class="product-card" tabindex="0">
-                <div class="flag"><span class="visually-hidden"></span></div>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
                     <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
@@ -546,4 +546,5 @@
   <!-- /modals -->
   <script src="js/script.js"></script>
 </body>
+
 </html>
