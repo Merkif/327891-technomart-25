@@ -390,7 +390,11 @@ a.logo:focus {
 }
 
 .profile-link__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #ffffff;
   font-size: 21px;
@@ -399,10 +403,12 @@ a.logo:focus {
   margin-bottom: 8px;
   position: relative;
 }
+
 .profile__link {
   color: #000000;
   margin-right: 37px;
 }
+
 .profile__logout {
   width: 20px;
   height: 17px;
@@ -427,7 +433,7 @@ a.logo:focus {
 .profile__logout::after {
   background: url("../img/icon-logout.svg") no-repeat;
   left: 0;
-  top:0;
+  top: 0;
 }
 
 .profile__link:hover::before,
@@ -1180,8 +1186,53 @@ a.logo:focus {
   user-select: none;
 }
 
+/* custom checkbox */
+.filter-list__input[type="checkbox"]+.filter-list__label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 27px;
+  height: 23px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M23 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3h17c1.65 0 3 1.35 3 3zm-3-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3c0-.542-.458-1-1-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat left;
+}
+
+.filter-list__input[type="checkbox"]:checked+.filter-list__label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M7.289 7.489L4.46 10.318l7.783 7.783L26.175 4.169 23.347 1.34 12.243 12.442z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.filter-list__input[type="checkbox"]:hover+.filter-list__label::before,
+.filter-list__input[type="checkbox"]:focus+.filter-list__label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23b5b5b5' d='M23 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3h17c1.65 0 3 1.35 3 3zm-3-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3c0-.542-.458-1-1-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.filter-list__input[type="checkbox"]:checked:hover+.filter-list__label::before,
+.filter-list__input[type="checkbox"]:checked:focus+.filter-list__label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23b5b5b5' d='M7.289 7.489L4.46 10.318l7.783 7.783L26.175 4.169 23.347 1.34 12.243 12.442z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23b5b5b5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.filter-list__input[type="checkbox"]:disabled+.filter-list__label,
+.filter-list__input[type="checkbox"]:checked:disabled+.filter-list__label {
+  opacity: 0.3;
+}
+
+.filter-list__input[type="checkbox"]:hover:disabled+.filter-list__label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M23 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3h17c1.65 0 3 1.35 3 3zm-3-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3c0-.542-.458-1-1-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.filter-list__input[type="checkbox"]:hover:checked:disabled+.filter-list__label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M7.289 7.489L4.46 10.318l7.783 7.783L26.175 4.169 23.347 1.34 12.243 12.442z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.filter-list__input[type="checkbox"]:focus+.filter-list__label::before {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 1px 2px #ffffff, 0 0 1px 5px rgb(77, 144, 254);
+  box-shadow: 0 0 1px 2px #ffffff, 0 0 1px 5px rgb(77, 144, 254);
+}
+
 /* custom radio button */
-.filter-list__radio {
+.filter-list__input[type="radio"]+.filter-list__label::before {
+  content: '';
   position: absolute;
   left: 0;
   top: -6px;
@@ -1194,85 +1245,40 @@ a.logo:focus {
   box-shadow: inset 0 0 0 4px #ffffff;
 }
 
-.filter-list__input:checked+.filter-list__radio {
+.filter-list__input[type="radio"]:checked+.filter-list__label::before {
   background-color: #c5c5c5;
 }
 
-.filter-list__input:hover+.filter-list__radio {
+.filter-list__input[type="radio"]:hover+.filter-list__label::before {
   border-color: #b5b5b5;
 }
 
-.filter-list__input:checked:hover+.filter-list__radio {
+.filter-list__input[type="radio"]:checked:hover+.filter-list__label::before {
   border-color: #b5b5b5;
   background-color: #b5b5b5;
 }
 
-.filter-list__input:focus+.filter-list__radio {
+.filter-list__input[type="radio"]:focus+.filter-list__label::before {
   -webkit-box-shadow: inset 0 0 0 4px #ffffff, 0 0 1px 2px #ffffff, 0 0 1px 5px rgb(77, 144, 254);
   box-shadow: inset 0 0 0 4px #ffffff, 0 0 1px 2px #ffffff, 0 0 1px 5px rgb(77, 144, 254);
   border-color: #b5b5b5;
   background-color: #b5b5b5;
 }
 
-.filter-list__input:checked:disabled+.filter-list__radio,
-.filter-list__input:checked:disabled~.filter-list__title,
-.filter-list__input:disabled+.filter-list__radio,
-.filter-list__input:disabled~.filter-list__title {
+.filter-list__input[type="radio"]:checked:disabled+.filter-list__label,
+.filter-list__input[type="radio"]:disabled+.filter-list__label {
   opacity: 0.3;
 }
 
-.filter-list__input:checked:disabled:hover+.filter-list__radio,
-.filter-list__input:disabled:hover+.filter-list__radio {
+.filter-list__input[type="radio"]:checked:disabled:hover+.filter-list__label::before,
+.filter-list__input[type="radio"]:disabled:hover+.filter-list__label::before {
   background-color: #c5c5c5;
   border-color: #c5c5c5;
 }
 
-.filter-list__input:disabled:hover+.filter-list__radio {
+.filter-list__input[type="radio"]:disabled:hover+.filter-list__label::before {
   border-color: #c5c5c5;
   background-color: #ffffff;
-}
-
-/* custom checkbox */
-.filter-list__checkbox {
-  position: absolute;
-  left: 0;
-  top: -2px;
-  width: 27px;
-  height: 23px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M23 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3h17c1.65 0 3 1.35 3 3zm-3-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3c0-.542-.458-1-1-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat left;
-}
-
-.filter-list__input:checked+.filter-list__checkbox {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M7.289 7.489L4.46 10.318l7.783 7.783L26.175 4.169 23.347 1.34 12.243 12.442z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.filter-list__input:hover+.filter-list__checkbox,
-.filter-list__input:focus+.filter-list__checkbox {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23b5b5b5' d='M23 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3h17c1.65 0 3 1.35 3 3zm-3-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3c0-.542-.458-1-1-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.filter-list__input:checked:hover+.filter-list__checkbox,
-.filter-list__input:checked:focus+.filter-list__checkbox {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23b5b5b5' d='M7.289 7.489L4.46 10.318l7.783 7.783L26.175 4.169 23.347 1.34 12.243 12.442z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23b5b5b5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.filter-list__input:disabled+.filter-list__checkbox,
-.filter-list__input:checked:disabled+.filter-list__checkbox {
-  opacity: 0.3;
-}
-
-.filter-list__input:hover:disabled+.filter-list__checkbox {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M23 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3h17c1.65 0 3 1.35 3 3zm-3-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3c0-.542-.458-1-1-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.filter-list__input:hover:checked:disabled+.filter-list__checkbox {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M7.289 7.489L4.46 10.318l7.783 7.783L26.175 4.169 23.347 1.34 12.243 12.442z'/%3E%3C/g%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.filter-list__input:focus+.filter-list__checkbox {
-  border-radius: 3px;
-  -webkit-box-shadow: 0 0 1px 2px #ffffff, 0 0 1px 5px rgb(77, 144, 254);
-  box-shadow: 0 0 1px 2px #ffffff, 0 0 1px 5px rgb(77, 144, 254);
 }
 
 .filters-result-btn {
