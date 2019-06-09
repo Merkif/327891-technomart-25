@@ -32,7 +32,7 @@ a {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   padding: 0 10px;
   margin: auto;
 }
@@ -556,9 +556,18 @@ a.logo:focus {
 }
 
 .category-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   max-width: 300px;
   width: 100%;
@@ -713,9 +722,15 @@ a.logo:focus {
 /* popular product */
 .section-topline {
   background-color: #f9f5f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 25px 25px 26px 25px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -748,7 +763,10 @@ a.logo:focus {
 }
 
 .manufacturer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: -20px;
 }
@@ -757,24 +775,36 @@ a.logo:focus {
   width: 220px;
   height: 145px;
   border: 1px solid #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 0 20px 20px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
 .manufacturer-list__item:hover,
 .manufacturer-list__item:focus {
+  -webkit-box-shadow: 0 10px 22px rgba(41, 52, 73, 0.5);
   box-shadow: 0 10px 22px rgba(41, 52, 73, 0.5);
   border-color: transparent;
 }
 
 .manufacturer-list__item:active {
+  -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
 .manufacturer-item__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
 }
@@ -782,7 +812,11 @@ a.logo:focus {
 /* services */
 .services {
   background-color: #f4f8f9;
-  padding: 64px 0 54px 0;
+  padding: 64px 0 0 0;
+}
+
+.services-container {
+  position: relative;
 }
 
 .tab-nav {
@@ -801,7 +835,12 @@ a.logo:focus {
 }
 
 .tab-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -810,6 +849,7 @@ a.logo:focus {
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
+  -webkit-box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
   box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
   background-color: #32425c;
   padding: 15px 22px 16px;
@@ -822,6 +862,7 @@ a.logo:focus {
 }
 
 .tab-nav__item a.js-tab--active {
+  -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
   box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
   background-color: #ffffff;
   color: #32425c;
@@ -854,6 +895,8 @@ a.logo:focus {
   line-height: 24px;
   margin: 0;
   max-width: 330px;
+  position: relative;
+  z-index: 1;
 }
 
 .credit-btn {
@@ -862,8 +905,18 @@ a.logo:focus {
 }
 
 /*tabs*/
+.tabs-content__list {
+  max-width: 620px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -880,8 +933,26 @@ a.logo:focus {
   display: block;
 }
 
-/* Breadcrumbs */
+.tabs-content__item {
+  content: '';
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 285px;
+}
 
+.tab--delivery {
+  background-image: url('../img/tab-delivery.png');
+}
+
+.tab-warranty {
+  background-image: url('../img/tab-warranty.png');
+}
+
+.tab-credit {
+  background-image: url('../img/tab-credit.png');
+}
+
+/* Breadcrumbs */
 .breadcrumbs-list {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -1388,6 +1459,8 @@ a.sorting-link--active:focus {
 }
 
 .product-grid .product-card__item {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 
