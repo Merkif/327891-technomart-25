@@ -443,7 +443,7 @@ a.logo:focus {
   opacity: 1;
 }
 
-.profile__link:active::before,
+.profile__link:active,
 .profile__logout:active::after {
   opacity: 0.3;
 }
