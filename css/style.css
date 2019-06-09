@@ -248,7 +248,8 @@ a.logo:focus {
   background-color: #161d29;
 }
 
-.cart--active {
+.cart--active,
+.bookmark--active {
   background-color: #ee3643;
 }
 
@@ -388,19 +389,28 @@ a.logo:focus {
   color: #cacaca;
 }
 
-.user-profile__link {
-  display: block;
+.profile-link__wrapper {
+  display: flex;
+  align-items: center;
   background-color: #ffffff;
-  color: #000000;
   font-size: 21px;
   line-height: 21px;
-  padding: 13px 67px 11px 47px;
+  padding: 13px 10px 11px 47px;
   margin-bottom: 8px;
   position: relative;
 }
+.profile__link {
+  color: #000000;
+  margin-right: 37px;
+}
+.profile__logout {
+  width: 20px;
+  height: 17px;
+  position: relative;
+}
 
-.user-profile__link::before,
-.user-profile__link::after {
+.profile__link::before,
+.profile__logout::after {
   content: "";
   position: absolute;
   width: 20px;
@@ -408,28 +418,27 @@ a.logo:focus {
   opacity: 0.3;
 }
 
-.user-profile__link::before {
+.profile__link::before {
   background: url("../img/icon-user.svg") no-repeat;
   top: 13px;
   left: 13px;
-  ;
 }
 
-.user-profile__link::after {
+.profile__logout::after {
   background: url("../img/icon-logout.svg") no-repeat;
-  top: 14px;
-  right: 10px
+  left: 0;
+  top:0;
 }
 
-.user-profile__link:hover::before,
-.user-profile__link:hover::after,
-.user-profile__link:focus::before,
-.user-profile__link:focus::after {
+.profile__link:hover::before,
+.profile__logout:hover::after,
+.profile__link:focus::before,
+.profile__logout:focus::after {
   opacity: 1;
 }
 
-.user-profile__link:active::before,
-.user-profile__link:active::after {
+.profile__link:active::before,
+.profile__logout:active::after {
   opacity: 0.3;
 }
 
@@ -774,6 +783,7 @@ a.logo:focus {
 .manufacturer-list__item {
   width: 220px;
   height: 145px;
+  background-color: #ffffff;
   border: 1px solid #eaeaea;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -895,8 +905,6 @@ a.logo:focus {
   line-height: 24px;
   margin: 0;
   max-width: 330px;
-  position: relative;
-  z-index: 1;
 }
 
 .credit-btn {
