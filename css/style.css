@@ -605,8 +605,8 @@ a.logo:focus {
   -ms-flex-align: start;
   align-items: flex-start;
   width: 300px;
-  -ms-flex-preferred-size: 300px;
-  flex-basis: 300px;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -684,6 +684,9 @@ a.logo:focus {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .slider-item__title {
@@ -703,7 +706,6 @@ a.logo:focus {
 
 .slider-item__link {
   min-width: 195px;
-  margin-top: auto;
 }
 
 .slider-arrows {
@@ -713,7 +715,6 @@ a.logo:focus {
   height: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   padding: 0;
@@ -741,7 +742,6 @@ a.logo:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -1771,7 +1771,6 @@ section.contact {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 25px;
   height: 2px;
@@ -2078,7 +2077,6 @@ section.contact {
   -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-width: 940px;
   padding: 0;
@@ -2101,7 +2099,6 @@ section.contact {
   bottom: 220px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   display: none;
 }
@@ -2110,7 +2107,6 @@ section.contact {
   top: 413px;
   left: 50%;
   -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
   display: none;
 }
