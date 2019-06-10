@@ -646,6 +646,7 @@ a.logo:focus {
 
 .category-slider {
   position: relative;
+  height: 266px;
 }
 
 .slider-list__item {
@@ -1520,6 +1521,7 @@ a.sorting-link--active:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 44px 42px 43px 42px;
+  z-index: 1;
   display: none;
 }
 
