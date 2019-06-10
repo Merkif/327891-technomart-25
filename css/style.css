@@ -552,6 +552,9 @@ a.logo:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .category-list {
@@ -565,9 +568,26 @@ a.logo:focus {
   justify-content: space-between;
 }
 
-.category-list--left {
-  max-width: 620px;
+.category-left__row {
+  width: 620px;
   margin-right: 20px;
+}
+
+.category-list__left {
+  margin-left: -20px;
+}
+
+.category-list__left li {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.category-right__row {
+  width: 300px;
+}
+
+.category-list__right li:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .category-list__item {
@@ -584,15 +604,15 @@ a.logo:focus {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  max-width: 300px;
-  width: 100%;
+  width: 300px;
+  -ms-flex-preferred-size: 300px;
+  flex-basis: 300px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding: 20px 25px 22px;
   background-color: #ffbf47;
   position: relative;
-}
-
-.category-list__item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .category--materials {
@@ -620,6 +640,7 @@ a.logo:focus {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
+  margin-right: 60px;
 }
 
 .category-item__link {
@@ -692,6 +713,7 @@ a.logo:focus {
   height: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   padding: 0;
@@ -719,6 +741,7 @@ a.logo:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -1153,6 +1176,7 @@ a.logo:focus {
   height: 2px;
   background-color: #444444;
   -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
 }
 
@@ -1446,17 +1470,15 @@ a.sorting-link--active:focus {
   position: relative;
 }
 
-.flag {
+.flag-new::before {
+  content: '';
   position: absolute;
   right: 0;
   top: 0;
   background: no-repeat center;
   width: 60px;
   height: 59px;
-  z-index: 1;
-}
-
-.flag-new {
+  z-index: 2;
   background-image: url(../img/new_flag.png);
 }
 
@@ -1749,6 +1771,7 @@ section.contact {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 25px;
   height: 2px;
@@ -2055,6 +2078,7 @@ section.contact {
   -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-width: 940px;
   padding: 0;
@@ -2077,6 +2101,7 @@ section.contact {
   bottom: 220px;
   left: 50%;
   -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   display: none;
 }
@@ -2085,6 +2110,7 @@ section.contact {
   top: 413px;
   left: 50%;
   -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
   transform: translate(-50%);
   display: none;
 }
@@ -2257,6 +2283,45 @@ section.contact {
   line-height: 18px;
 }
 
+@-webkit-keyframes bounceInDown {
+
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0) translateX(-50%);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0) translateX(-50%);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0) translateX(-50%);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0) translateX(-50%);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) translateX(-50%);
+  }
+}
+
 @keyframes bounceInDown {
 
   from,
@@ -2298,9 +2363,49 @@ section.contact {
 
 .js-modal--open {
   display: block;
+  -webkit-animation: bounceInDown 0.8s;
   animation: bounceInDown 0.8s;
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
+}
+
+@-webkit-keyframes bounceInDownForMap {
+
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0) translate(-50%, -50%);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0) translate(-50%, -50%);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0) translate(-50%, -50%);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0) translate(-50%, -50%);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) translate(-50%, -50%);
+  }
 }
 
 @keyframes bounceInDownForMap {
@@ -2344,6 +2449,7 @@ section.contact {
 
 .js-modal__map--open {
   display: block;
+  -webkit-animation: bounceInDownForMap 0.8s;
   animation: bounceInDownForMap 0.8s;
   -webkit-animation-name: bounceInDownForMap;
   animation-name: bounceInDownForMap;

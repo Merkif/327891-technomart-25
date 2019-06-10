@@ -78,19 +78,19 @@
     <section class="offer">
       <div class="offer-container container">
         <h2 class="visually-hidden">Что мы предлагаем?</h2>
-        <ul class="category-list category-list--left">
-          <li class="category-list__item category--materials">
-            <div class="flag flag-new">
+        <div class="category-left__row">
+          <ul class="category-list category-list__left">
+            <li class="category-list__item category--materials flag-new">
               <span class="visually-hidden">Новинка</span>
-            </div>
-            <h3 class="category-item__title">Материалы</h3>
-            <a href="#" class="category-item__link">На любой вкус</a>
-          </li>
-          <li class="category-list__item category--instruments">
-            <h3 class="category-item__title">Инструменты</h3>
-            <a href="#" class="category-item__link">На все случаи</a>
-          </li>
-          <li class="category-slider">
+              <h3 class="category-item__title">Материалы</h3>
+              <a href="#" class="category-item__link">На любой вкус</a>
+            </li>
+            <li class="category-list__item category--instruments">
+              <h3 class="category-item__title">Инструменты</h3>
+              <a href="#" class="category-item__link">На все случаи</a>
+            </li>
+          </ul>
+          <div class="category-slider">
             <button type="button" class="slider-arrows slider-arrow__prev">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
@@ -117,22 +117,24 @@
                 <span class="visually-hidden">2</span>
               </li>
             </ul>
-          </li>
-        </ul>
-        <ul class="category-list category-list--right">
-          <li class="category-list__item category--technique">
-            <h3 class="category-item__title">Техника</h3>
-            <a href="#" class="category-item__link">Для стройки</a>
-          </li>
-          <li class="category-list__item category--discount">
-            <h3 class="category-item__title">Скидка 50%</h3>
-            <a href="#" class="category-item__link">На 350 товаров</a>
-          </li>
-          <li class="category-list__item category--delivery">
-            <h3 class="category-item__title">Доставка</h3>
-            <a href="#" class="category-item__link">Бесплатно</a>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="category-right__row">
+          <ul class="category-list category-list__right">
+            <li class="category-list__item category--technique">
+              <h3 class="category-item__title">Техника</h3>
+              <a href="#" class="category-item__link">Для стройки</a>
+            </li>
+            <li class="category-list__item category--discount">
+              <h3 class="category-item__title">Скидка 50%</h3>
+              <a href="#" class="category-item__link">На 350 товаров</a>
+            </li>
+            <li class="category-list__item category--delivery">
+              <h3 class="category-item__title">Доставка</h3>
+              <a href="#" class="category-item__link">Бесплатно</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- /.container -->
     </section>
@@ -213,10 +215,8 @@
             </article>
           </li>
           <li class="product-card__item">
-            <article class="product-card" tabindex="0">
-              <div class="flag flag-new">
-                <span class="visually-hidden">Новинка</span>
-              </div>
+            <article class="product-card flag-new" tabindex="0">
+              <span class="visually-hidden">Новинка</span>
               <div class="product-card__top">
                 <div class="product-card__thumb">
                   <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
