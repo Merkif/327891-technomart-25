@@ -1,4 +1,3 @@
-
 /* modal write us */
 var writeUs = document.querySelector(".js-write__us--btn");
 var popupWriteUs = document.querySelector(".modal-write-us");
@@ -18,9 +17,7 @@ window.addEventListener("keydown", function (evt) {
       popupWriteUs.classList.remove("js-modal--open");
     }
   }
-}); 
-
-/*modal map */
+}); /*modal map */
 var modalMap = document.querySelector(".contact-map");
 var popupMap = document.querySelector(".modal-map");
 var mapClose = popupMap.querySelector(".modal-close");
@@ -39,18 +36,16 @@ window.addEventListener("keydown", function (evt) {
       popupMap.classList.remove("js-modal__map--open");
     }
   }
-}); 
-
-/* modal cart */
+}); /* modal cart */
 var addCartBtn = document.querySelectorAll(".buy__btn");
 var popupCart = document.querySelector(".modal-cart");
 var cartClose = popupCart.querySelector(".modal-close");
-addCartBtn.forEach(function (el, i, ar) {
-  el.addEventListener("click", function (evt) {
+for (var i = 0; i < addCartBtn.length; i++) {
+  addCartBtn[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     popupCart.classList.add("js-modal--open");
   });
-});
+}
 cartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupCart.classList.remove("js-modal--open");
@@ -62,9 +57,7 @@ window.addEventListener("keydown", function (evt) {
       popupCart.classList.remove("js-modal--open");
     }
   }
-}); 
-
-/*tabs */
+}); /*tabs */
 document.addEventListener('DOMContentLoaded', function (e) {
   'use strict';
   var list = document.querySelectorAll('.tab-nav a');
