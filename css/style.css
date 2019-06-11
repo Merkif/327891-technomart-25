@@ -98,6 +98,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  padding-bottom: 3px;
+}
+
+.top-menu__logo img {
+  width: 109px;
+  height: 19px;
 }
 
 .top-menu__container {
@@ -144,7 +150,7 @@ a.logo:focus {
   width: 270px;
   padding: 10px 12px 10px 49px;
   min-height: 42px;
-  background: url("../img/icon-search.svg") no-repeat left 17px center;
+  background: url("../img/icon-search.svg") no-repeat left 17px top 12px;
 }
 
 .top-menu__form [type="search"]:hover {
@@ -183,7 +189,7 @@ a.logo:focus {
 
 /* .header-top__menu a:focus:not(.logo), .header-menu__navigation a:focus { outline-offset: -4px; outline-style: dashed; outline-color: #fff; outline-width: 2px; } */
 .bookmark__link {
-  padding: 11px 27px 13px 44px;
+  padding: 12px 27px 12px 44.5px;
 }
 
 .bookmark__link::before {
@@ -198,7 +204,7 @@ a.logo:focus {
 }
 
 .cart__link {
-  padding: 11px 13px 13px 50px;
+  padding: 12px 27px 12px 49.5px;
 }
 
 .cart__link::before,
@@ -206,7 +212,7 @@ a.logo:focus {
   content: "";
   position: absolute;
   top: 12px;
-  left: 17px;
+  left: 18px;
   width: 15px;
   height: 15px;
   opacity: 0.3;
@@ -266,6 +272,7 @@ a.logo:focus {
 .btn-order {
   background-color: #63a63e;
   padding: 12px 18px 12px;
+  text-align: center;
 }
 
 .btn-order:focus,
@@ -301,8 +308,14 @@ a.logo:focus {
   font-style: italic;
   line-height: 23px;
   font-weight: 400;
-  max-width: 194px;
-  margin: 0 0 44px 53px;
+  max-width: 202px;
+  margin: 2px 0px 40px 52px;
+}
+
+.header-menu__contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
 }
 
 .header-menu__phone {
@@ -312,8 +325,8 @@ a.logo:focus {
   color: #ee3643;
   font-size: 21px;
   line-height: 21px;
-  padding: 9px 15px 9px 79px;
-  margin-bottom: 5px;
+  padding: 8px 12px 10px 70px;
+  margin-bottom: 3px;
   min-width: 270px;
 }
 
@@ -321,7 +334,7 @@ a.logo:focus {
   content: "";
   position: absolute;
   left: 12px;
-  top: 10px;
+  top: 9px;
   width: 18px;
   height: 19px;
   background: url("../img/icon-phone.svg") no-repeat;
@@ -352,7 +365,7 @@ a.logo:focus {
 }
 
 .login__btn {
-  padding: 12px 25px 12px 48px;
+  padding: 11px 25px 13px 47.91px;
   margin-right: 10px;
   position: relative;
 }
@@ -360,7 +373,7 @@ a.logo:focus {
 .login__btn::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 13px;
   left: 14px;
   width: 20px;
   height: 17px;
@@ -378,7 +391,7 @@ a.logo:focus {
 }
 
 .signup__btn {
-  padding: 12px 24.5px;
+  padding: 11px 24px 13px 24.15px;
 }
 
 .header-menu__btn a:focus,
@@ -526,7 +539,7 @@ a.logo:focus {
 
 .navigation-list a {
   display: block;
-  padding: 22px 30px 21px 31px;
+  padding: 20px 29.5px 23px 31px;
   color: #ffffff;
   line-height: 17px;
   outline-offset: -4px;
@@ -637,11 +650,10 @@ a.logo:focus {
 }
 
 .category-item__title {
-  margin: 0 0 13px 0;
+  margin: 0 60px 13px 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
-  margin-right: 60px;
 }
 
 .category-item__link {
@@ -654,7 +666,8 @@ a.logo:focus {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-  padding: 10px 24px;
+  padding: 10px 13px;
+  min-width: 135px;
 }
 
 .category-item__link:hover,
@@ -695,6 +708,7 @@ a.logo:focus {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+  margin-bottom: 3px;
   text-transform: uppercase;
 }
 
@@ -765,7 +779,7 @@ a.logo:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 25px 25px 26px 25px;
+  padding: 26px 25px 25px 29px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1585,7 +1599,7 @@ a.sorting-link--active:focus {
 
 .product-card__body {
   width: inherit;
-  padding: 0 30px 21px 30px;
+  padding: 10px 30px 20px 30px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1643,7 +1657,7 @@ a.sorting-link--active:focus {
 .product-card__title {
   width: inherit;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -1658,7 +1672,7 @@ a.sorting-link--active:focus {
 .price--sale {
   color: #999999;
   text-decoration: line-through;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 }
 
 .price--current {
@@ -1791,7 +1805,7 @@ section.contact {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 11px 10px 14px;
   text-align: center;
   border: none;
   border-radius: 2px;
