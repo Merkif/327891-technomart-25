@@ -866,7 +866,7 @@ a.logo:focus {
 }
 
 .tab-nav::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 10px;
   height: 279px;
@@ -974,7 +974,7 @@ a.logo:focus {
 }
 
 .tabs-content__item {
-  content: '';
+  content: "";
   background-position: center right;
   background-repeat: no-repeat;
   height: 100%;
@@ -1215,7 +1215,7 @@ a.logo:focus {
 
 /* custom checkbox */
 .filter-list__input[type="checkbox"]+.filter-list__label::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -2px;
@@ -1259,7 +1259,7 @@ a.logo:focus {
 
 /* custom radio button */
 .filter-list__input[type="radio"]+.filter-list__label::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: -6px;
@@ -1472,7 +1472,7 @@ a.sorting-link--active:focus {
 }
 
 .flag-new::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 0;
@@ -2105,10 +2105,10 @@ section.contact {
 }
 
 .modal-cart {
-  top: 413px;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: none;
 }
 
@@ -2233,7 +2233,7 @@ section.contact {
 }
 
 .modal-content__mark::before {
-  content: '';
+  content: "";
   width: 66px;
   height: 66px;
   border-radius: 50%;
@@ -2366,7 +2366,7 @@ section.contact {
   animation-name: bounceInDown;
 }
 
-@-webkit-keyframes bounceInDownForMap {
+@-webkit-keyframes bounce {
 
   from,
   60%,
@@ -2405,7 +2405,7 @@ section.contact {
   }
 }
 
-@keyframes bounceInDownForMap {
+@keyframes bounce {
 
   from,
   60%,
@@ -2444,10 +2444,10 @@ section.contact {
   }
 }
 
-.js-modal__map--open {
+.modal--open {
   display: block;
-  -webkit-animation: bounceInDownForMap 0.8s;
-  animation: bounceInDownForMap 0.8s;
-  -webkit-animation-name: bounceInDownForMap;
-  animation-name: bounceInDownForMap;
+  -webkit-animation: bounce 0.8s;
+  animation: bounce 0.8s;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
 }
