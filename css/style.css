@@ -694,6 +694,7 @@ a.logo:focus {
 
 .slider-list__item {
   min-width: 620px;
+  height: 266px;
   min-height: 266px;
   padding: 22px 25px;
   display: -webkit-box;
@@ -709,6 +710,8 @@ a.logo:focus {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  background-repeat: no-repeat;
+  background-color: #695c53;
 }
 
 .slider-item__title {
@@ -1384,7 +1387,7 @@ a.logo:focus {
 }
 
 .sorting-links a {
-  color: rgb(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   position: relative;
   border-bottom: 1px dotted #ee3643;
   white-space: nowrap;
@@ -1435,12 +1438,12 @@ a.sorting-link--active:focus {
 
 .sorting-control--up {
   border-width: 0 5.5px 10px 5.5px;
-  border-color: transparent transparent rgb(0, 0, 0, 0.3) transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.3) transparent;
 }
 
 .sorting-control--down {
   border-width: 10px 5.5px 0 5.5px;
-  border-color: rgb(0, 0, 0, 0.3) transparent transparent transparent;
+  border-color: rgba(0, 0, 0, 0.3) transparent transparent transparent;
 }
 
 .sorting-control--up.sorting-control--active {
@@ -1692,7 +1695,7 @@ a.sorting-link--active:focus {
   margin-right: 12px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  padding: 11px 19px 9px 35px;
+  padding: 10px 19px 10px 35px;
 }
 
 .price--current::after {
@@ -1739,9 +1742,14 @@ section.contact {
 }
 
 .contact-map {
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
-
+.contact-map img {
+  width: 300px;
+  height: 158px;
+  display: block;
+  background-color: #eee9e3;
+}
 .section-title {
   font-size: 30px;
   line-height: 30px;
@@ -2100,15 +2108,10 @@ section.contact {
   display: none;
 }
 
-.modal-map .map-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-}
-
 .map-wrapper img {
   height: 100%;
+  display: block;
+  background-color: #eee9e3;
 }
 
 .modal-write-us {
