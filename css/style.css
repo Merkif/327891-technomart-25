@@ -936,7 +936,7 @@ a.logo:focus {
   max-width: 403px;
 }
 
-.tab-title {
+.tab__title {
   margin: 0 0 22px 0;
   color: #32425c;
   font-size: 36px;
@@ -955,7 +955,7 @@ a.logo:focus {
   max-width: 306px;
 }
 
-.credit-btn {
+.credit--btn {
   min-width: 195px;
   margin-top: 28px;
 }
