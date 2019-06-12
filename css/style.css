@@ -535,17 +535,6 @@ a.logo:focus {
   flex-wrap: wrap;
 }
 
-.navigation-list__item:first-child,
-.navigation-list__item:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-}
-
-.navigation-list__item:first-child {
-  text-align: right;
-}
-
 .navigation-list a {
   display: block;
   padding: 20px 29.5px 23px 31px;
@@ -742,6 +731,7 @@ a.logo:focus {
   height: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   padding: 0;
@@ -769,6 +759,7 @@ a.logo:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -1248,7 +1239,7 @@ a.logo:focus {
   top: -2px;
   width: 27px;
   height: 23px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M23 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3h17c1.65 0 3 1.35 3 3zm-3-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3c0-.542-.458-1-1-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat left;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23c5c5c5' d='M23 3v17c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3h17c1.65 0 3 1.35 3 3zm-3-1H3c-.542 0-1 .458-1 1v17c0 .542.458 1 1 1h17c.542 0 1-.458 1-1V3c0-.542-.458-1-1-1z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat left / contain;
 }
 
 .filter-list__input[type="checkbox"]:checked+.filter-list__label::before {
@@ -1797,6 +1788,7 @@ section.contact {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 25px;
   height: 2px;
@@ -2107,6 +2099,7 @@ section.contact {
   -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-width: 940px;
   padding: 0;
@@ -2124,6 +2117,7 @@ section.contact {
   bottom: 220px;
   left: 50%;
   -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   display: none;
 }
@@ -2132,6 +2126,7 @@ section.contact {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: none;
 }
