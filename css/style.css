@@ -1002,11 +1002,11 @@ a.logo:focus {
   background-position: top 22px right 1px;
 }
 
-.tab-warranty {
+.tab--warranty {
   background-image: url("../img/tab-warranty.png");
 }
 
-.tab-credit {
+.tab--credit {
   background-image: url("../img/tab-credit.png");
 }
 
