@@ -22,10 +22,10 @@
           <label for="search" class="visually-hidden-input">Поиск</label>
           <input type="search" id="search" placeholder="Поиск:">
         </form>
-        <a href="/catalog.html" class="bookmark__link" title="Закладки">Закладки:
+        <a href="/catalog.html" class="bookmark-link" title="Закладки">Закладки:
           <span class="visually-hidden"> Количество закладок:</span>0
         </a>
-        <a href="/catalog.html" class="cart__link cart--active" title="Корзина">Корзина:
+        <a href="/catalog.html" class="cart-link cart--active" title="Корзина">Корзина:
           <span class="visually-hidden"> Количество товаров в корзине:</span>10
         </a>
         <a href="/catalog.html" class="btn-order" title="Оформить заказ">Оформить заказ</a>
@@ -33,7 +33,7 @@
     </div>
     <div class="header-menu">
       <div class="header-menu__container container">
-        <p class="header-menu__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="header-menu__title">Интернет-магазин строительных материалов<br>и инструментов для ремонта</p>
         <div class="header-menu__contact">
           <a class="header-menu__phone" href="tel:+78125550555">
             <span class="visually-hidden">Номер телефона компании ТЕХНОМАРТ:</span>
@@ -60,7 +60,7 @@
             <li class="navigation-list__item">
               <a href="#">Компания</a>
             </li>
-            <li class="navigation-list__item is--active">
+            <li class="navigation-list__item navigation-list__item--active">
               <a href="catalog.html">Каталог</a>
             </li>
             <li class="navigation-list__item">
@@ -87,7 +87,9 @@
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-list__item is-home--page">
-              <a href="index.html" title="Главная"><span class="visually-hidden">Главная</span></a>
+              <a href="index.html" title="Главная">
+                <span class="visually-hidden">Главная</span>
+              </a>
             </li>
             <li class="breadcrumbs-list__item">
               <a href="catalog.html">Каталог</a>
@@ -95,7 +97,7 @@
             <li class="breadcrumbs-list__item">
               <a href="#">Инструменты</a>
             </li>
-            <li class="breadcrumbs-list__item breadcrumbs--active">
+            <li class="breadcrumbs-list__item breadcrumbs-list__item--active">
               <a href="#">Перфораторы</a>
             </li>
           </ul>
@@ -133,9 +135,9 @@
                 <legend class="filter-item__title">Производители:</legend>
                 <ul class="filter-list">
                   <li class="filter-list__item">
-                    <input class="filter-list__input visually-hidden-input" id="bosh" type="checkbox" name="bosh"
+                    <input class="filter-list__input visually-hidden-input" id="bosch" type="checkbox" name="bosch"
                       checked>
-                    <label class="filter-list__label" for="bosh">BOSH</label>
+                    <label class="filter-list__label" for="bosch">BOSCH</label>
                   </li>
                   <li class="filter-list__item">
                     <input class="filter-list__input visually-hidden-input" id="interskol" type="checkbox"
@@ -270,7 +272,7 @@
               <article class="product-card" tabindex="0">
                 <div class="product-card__top">
                   <div class="product-card__thumb">
-                    <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+                    <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                   </div>
                   <div class="product-card__btns">
                     <a href="#" class="buy__btn" title="Купить">Купить</a>
@@ -294,7 +296,7 @@
                 <span class="visually-hidden">Новинка</span>
                 <div class="product-card__top">
                   <div class="product-card__thumb">
-                    <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+                    <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
                   </div>
                   <div class="product-card__btns">
                     <a href="#" class="buy__btn" title="Купить">Купить</a>
@@ -317,7 +319,7 @@
               <article class="product-card" tabindex="0">
                 <div class="product-card__top">
                   <div class="product-card__thumb">
-                    <img src="img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+                    <img src="img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
                   </div>
                   <div class="product-card__btns">
                     <a href="#" class="buy__btn" title="Купить">Купить</a>
@@ -398,7 +400,7 @@
           <nav class="pagination" aria-label="Постраничная навигация">
             <ul class="pagination-list">
               <li>
-                <a class="pagination__active">1</a>
+                <a class="pagination-list__item--active">1</a>
               </li>
               <li>
                 <a href="#1">2</a>
@@ -420,7 +422,7 @@
         <h2 class="section-title">Пара слов о перфораторах</h2>
         <p>
           Перфоратор — универсальный строительный инструмент.
-          Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы.
           Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
@@ -480,17 +482,17 @@
           <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
         </div>
         <ul class="footer-social__list">
-          <li class="social-list__item social-list--vk">
+          <li class="social-list__item social-list__item--vk">
             <a href="#" title="Вконтакте">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social-list__item social-list--fb">
+          <li class="social-list__item social-list__item--fb">
             <a href="#" title="Facebook">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
-          <li class="social-list__item social-list--inst">
+          <li class="social-list__item social-list__item--inst">
             <a href="#" title="instagram">
               <span class="visually-hidden">Instagram</span>
             </a>
@@ -514,7 +516,7 @@
     <section class="modal modal-cart" role="dialog">
       <button class="modal-close" type="button">Закрыть</button>
       <div class="modal-content__wrapper modal-content__mark">
-        <h2 class="modal-cart__title">Товар добавлен в корзину</h2>
+        <h2 class="modal-cart__title">Товар добавлен в корзину!</h2>
       </div>
       <div class="modal-btn__wrapper">
         <a class="btn checkout-btn" href="order.html">Оформить заказ</a>
