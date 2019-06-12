@@ -1,4 +1,4 @@
-var addCartBtn = document.querySelectorAll(".buy__btn");
+var addCartBtn = document.querySelectorAll(".buy-btn");
 var popupCart = document.querySelector(".modal-cart");
 var cartClose = popupCart.querySelector(".modal-close");
 for (var i = 0; i < addCartBtn.length; i++) {

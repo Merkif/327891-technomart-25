@@ -1873,13 +1873,13 @@ section.contact {
   margin-right: 10px;
 }
 
-.pagination-list .pagination-list__item--active {
+.pagination-list__item--active a {
   border-color: transparent;
   background-color: #ee3643;
   color: #ffffff;
 }
 
-.pagination-list .pagination__next {
+.pagination__next a {
   padding: 9px 31px;
 }
 
