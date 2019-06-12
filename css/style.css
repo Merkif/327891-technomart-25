@@ -20,6 +20,7 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
+  min-width: 960px;
 }
 
 img {
@@ -741,7 +742,6 @@ a.logo:focus {
   height: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
   padding: 0;
@@ -769,7 +769,6 @@ a.logo:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
   transform: translate(-50%);
 }
 
@@ -1744,12 +1743,14 @@ section.contact {
 .contact-map {
   margin-bottom: 40px;
 }
+
 .contact-map img {
   width: 300px;
   height: 158px;
   display: block;
   background-color: #eee9e3;
 }
+
 .section-title {
   font-size: 30px;
   line-height: 30px;
@@ -1796,7 +1797,6 @@ section.contact {
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 25px;
   height: 2px;
@@ -1955,7 +1955,7 @@ section.contact {
   margin-right: 20px;
 }
 
-.footer-logo {
+.footer--logo {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1969,6 +1969,10 @@ section.contact {
   font-size: 18px;
   line-height: 24px;
   margin: 0;
+}
+
+.footer__tel {
+  color: #f3f7f9;
 }
 
 .footer-navigation__item:not(:last-child) {
@@ -2004,6 +2008,9 @@ section.contact {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 34px;
   padding-bottom: 26px;
 }
@@ -2058,7 +2065,7 @@ section.contact {
 }
 
 .footer-contact {
-  margin-right: 50px;
+  margin-right: 48px;
 }
 
 .footer-contact p,
@@ -2100,7 +2107,6 @@ section.contact {
   -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-width: 940px;
   padding: 0;
@@ -2118,7 +2124,6 @@ section.contact {
   bottom: 220px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   display: none;
 }
@@ -2127,7 +2132,6 @@ section.contact {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: none;
 }
