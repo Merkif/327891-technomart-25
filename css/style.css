@@ -187,7 +187,6 @@ a.logo:focus {
   outline-offset: -4px;
 }
 
-/* .header-top__menu a:focus:not(.logo), .header-menu__navigation a:focus { outline-offset: -4px; outline-style: dashed; outline-color: #fff; outline-width: 2px; } */
 .bookmark-link {
   padding: 12px 27px 12px 44.5px;
 }
@@ -208,7 +207,7 @@ a.logo:focus {
 }
 
 .cart-link::before,
-.buy__btn::before {
+.buy-btn::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -223,14 +222,14 @@ a.logo:focus {
 .bookmark-link:focus::before,
 .cart-link:hover::before,
 .cart-link:focus::before,
-.buy__btn:hover::before,
-.buy__btn:focus::before {
+.buy-btn:hover::before,
+.buy-btn:focus::before {
   opacity: 1;
 }
 
 .bookmark-link:active::before,
 .cart-link:active::before,
-.buy__btn:active::before {
+.buy-btn:active::before {
   opacity: 0.5;
 }
 
@@ -1585,21 +1584,21 @@ a.sorting-link--active:focus {
   display: flex;
 }
 
-.buy__btn,
-.bookmark__btn {
+.buy-btn,
+.bookmark-btn {
   padding: 10px;
   text-transform: uppercase;
 }
 
-.bookmark__btn {
+.bookmark-btn {
   padding: 7px;
 }
 
-.buy__btn {
+.buy-btn {
   padding-left: 49px
 }
 
-.buy__btn::before {
+.buy-btn::before {
   top: 11px;
   left: 14px;
 }
@@ -1629,7 +1628,7 @@ a.sorting-link--active:focus {
   justify-content: space-between;
 }
 
-.buy__btn {
+.buy-btn {
   -webkit-box-shadow: inset 0 -3px 0 #367315;
   box-shadow: inset 0 -3px 0 #367315;
   background-color: #63a63e;
@@ -1639,30 +1638,30 @@ a.sorting-link--active:focus {
   text-align: left;
 }
 
-.buy__btn:hover,
-.buy__btn:focus {
+.buy-btn:hover,
+.buy-btn:focus {
   background-color: #5fbb2d;
 }
 
-.buy__btn:active {
+.buy-btn:active {
   background-color: #518534;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-.bookmark__btn {
+.bookmark-btn {
   font: inherit;
   color: #32425c;
   border: 3px solid #63a63e;
   background-color: #ffffff;
 }
 
-.bookmark__btn:hover,
-.bookmark__btn:focus {
+.bookmark-btn:hover,
+.bookmark-btn:focus {
   border: 3px solid #32425c;
 }
 
-.bookmark__btn:active {
+.bookmark-btn:active {
   opacity: 0.3;
 }
 
@@ -1815,7 +1814,7 @@ section.contact {
   border-radius: 2px;
 }
 
-.more-btn {
+.more--btn {
   min-width: 220px;
 }
 
@@ -2050,14 +2049,8 @@ section.contact {
   background-color: #ee3643;
 }
 
-.footer-social__list a:focus {
-  outline: none;
-  -webkit-box-shadow: 0 0 1px 3px rgb(77, 144, 254);
-  box-shadow: 0 0 1px 3px rgb(77, 144, 254);
-}
-
 .footer-contact {
-  margin-right: 43px;
+  margin-right: 50px;
 }
 
 .footer-contact p,
@@ -2088,7 +2081,7 @@ section.contact {
   background-color: #ffffff;
   border-top: 7px solid #ff3745;
   z-index: 9999;
-  padding-top: 49px;
+  padding-top: 50px;
   max-width: 620px;
   width: 100%;
 }

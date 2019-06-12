@@ -6,7 +6,7 @@ var writeUsModalClose = popupWriteUs.querySelector(".modal-close");
 var modalMap = document.querySelector(".contact-map");
 var popupMap = document.querySelector(".modal-map");
 var mapClose = popupMap.querySelector(".modal-close");
-var addCartBtn = document.querySelectorAll(".buy__btn");
+var addCartBtn = document.querySelectorAll(".buy-btn");
 var popupCart = document.querySelector(".modal-cart");
 var cartClose = popupCart.querySelector(".modal-close");
 writeUs.addEventListener("click", function (evt) {
