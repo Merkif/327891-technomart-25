@@ -11,17 +11,17 @@ var popupCart = document.querySelector(".modal-cart");
 var cartClose = popupCart.querySelector(".modal-close");
 writeUs.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popupWriteUs.classList.add("js-modal--open");
+  popupWriteUs.classList.add("modal--open");
 });
 writeUsModalClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popupWriteUs.classList.remove("js-modal--open");
+  popupWriteUs.classList.remove("modal--open");
 });
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popupWriteUs.classList.contains("js-modal--open")) {
-      popupWriteUs.classList.remove("js-modal--open");
+    if (popupWriteUs.classList.contains("modal--open")) {
+      popupWriteUs.classList.remove("modal--open");
     }
   }
 }); /*modal map */
