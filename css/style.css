@@ -315,7 +315,7 @@ a.logo:focus {
 }
 
 .header-menu__title-p {
-  margin-right: 20px
+  margin-right: 19px
 }
 
 .header-menu__contact {
@@ -2127,21 +2127,21 @@ section.contact {
   z-index: 9999;
   padding-top: 49px;
   max-width: 620px;
-  width: 100%
-}
-
-.modal-map {
+  width: 100%;
   top: 50%;
   left: 50%;
-  -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, .5);
-  box-shadow: 0 0 15px 1px rgba(47, 42, 43, .5);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  display: none
+}
+
+.modal-map {
+  -webkit-box-shadow: 0 0 15px 1px rgba(47, 42, 43, .5);
+  box-shadow: 0 0 15px 1px rgba(47, 42, 43, .5);
   max-width: 940px;
   padding: 0;
   border-top: none;
-  display: none;
   height: 448px
 }
 
@@ -2163,24 +2163,6 @@ section.contact {
   height: 100%;
   display: block;
   background-color: #eee9e3
-}
-
-.modal-write-us {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: none
-}
-
-.modal-cart {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: none
 }
 
 .modal-close {
